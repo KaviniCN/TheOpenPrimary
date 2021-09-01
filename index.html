@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TheOpenPrimary</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .row {
+        }
+        .main {
+            width: 1440px;
+        }
+        .header {
+            height: 100%;
+        }
+        .logo-container {
+            height: 125px;
+        }
+        .logo-wrapper {
+            top: 44px;
+            left: 59px;
+            width: 379px;
+            height: 49px;
+            background: transparent url('img.png') 0% 0% no-repeat padding-box;
+            opacity: 1;
+            margin-top: 44px;
+            margin-left: 59px;
+        }
+        .menu-item-wrapper {
+            top: 55px;
+            left: 728px;
+            width: 671px;
+            height: 28px;
+            text-align: left;
+            font: normal normal bold 23px/28px Montserrat;
+            letter-spacing: 0px;
+            color: #232C66;
+            text-transform: capitalize;
+            opacity: 1;
+            display: flex;
+            justify-content: space-between;
+            flex-flow: column wrap;
+            margin-right: 41px;
+            margin-top: 55px;
+        }
+        .menu-wrapper {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .menu-item {
+
+        }
+        .last-menu-item {
+            text-align: end;
+        }
+        .middle-menu-item {
+            text-align: center;
+        }
+        .main-image-container {
+            height: 695px;
+        }
+        .shadow {
+            margin: 0 62px 0 65px;
+            width: 1313px;
+            height: 93px;
+            background: #AE52A6 0% 0% no-repeat padding-box;
+            border-radius: 24px;
+            opacity: 1;
+        }
+        .image-wrapper {
+            top: 145px;
+            left: 37px;
+            margin: -73px 41px 0 37px;
+            width: 1362px;
+            height: 675px;
+            background: transparent url('main.jpg') 0% 0% no-repeat padding-box;
+            border-radius: 32px;
+            opacity: 1;
+        }
+        .quote-wrapper {
+            height: 221px;
+            width: 1096px;
+            background: #AE52A6 0% 0% no-repeat padding-box;
+            border-radius: 20px;
+            opacity: 0.8;
+            margin-top: -253px;
+            margin-left: 170px;
+        }
+        .quote {
+            text-align: left;
+            font: normal normal bold 45px/50px Montserrat;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+
+        }
+        .quote-container {
+            width: 100%;
+            height: 100%;
+            padding: 33px 65px 33px 107px;
+        }
+        .content-container{
+            margin: 89px 159px 0 157px;
+            height: 1175px;
+        }
+        .form {
+            width: 537px;
+            height: 846px;
+            background: #232C66 0% 0% no-repeat padding-box;
+            border-radius: 20px;
+            opacity: 1;
+            padding: 51px 59px 0 61px;
+        }
+        .form-heading{
+            text-align: center;
+            font-family: Montserrat;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 900;
+            font-size: 45px;
+            line-height: 50px;
+            letter-spacing: 0;
+            color: #FFFFFF;
+            text-transform: capitalize;
+            opacity: 1;
+            margin-top: 0;
+            height: 111px;
+            margin-bottom: 27px;
+        }
+        .form-wrapper{
+            padding: 0;
+        }
+        .input-container {
+            width: 417px;
+            height: 198px;
+        }
+        .radio-button-container {
+            width: 100%;
+            text-align: center;
+            padding-bottom: 26px;
+        }
+        .radio-button-main-label {
+            text-align: left;
+            font: normal normal 600 20px/25px Montserrat;
+            letter-spacing: 0.2px;
+            color: #FFFFFF;
+            opacity: 1;
+            margin-bottom: 10px;
+        }
+        .form .custom-control-label {
+            text-align: left;
+            font: normal normal normal 20px/25px Montserrat;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+        }
+        .form .custom-control-input {
+            color: #00ADD0;
+        }
+        .radio-button-main-label-container {
+            padding-top: 15px;
+            padding-left: 160.5px;
+        }
+        .input-container-2 {
+            width: 100%;
+            height: 127px;
+        }
+        .input-container-2 input {
+            width: 100%;
+            flex: auto;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 20px 20px 60px #ACA39A33;
+            border-radius: 10px;
+            opacity: 1;
+            height: 60px;
+            padding: 0;
+            border: 0;
+            margin-bottom: 9px;
+        }
+        .input-container input {
+            width: 100%;
+            flex: auto;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 20px 20px 60px #ACA39A33;
+            border-radius: 10px;
+            opacity: 1;
+            height: 60px;
+            border: 0;
+            margin-bottom: 9px;
+        }
+        .form input {
+            padding: 0 0 0 30px;
+        }
+        ::-webkit-input-placeholder {
+            font: normal normal normal 20px/25px Montserrat;
+            letter-spacing: 0px;
+            color: #232C66;
+            opacity: 1;
+        }
+        .input-container h2 {
+            margin: 6px 231.5px 10px 231.5px;
+            width: 84px;
+            height: 24px;
+            text-align: left;
+            font: normal normal 600 20px/25px Montserrat;
+            letter-spacing: 0.2px;
+            color: #FFFFFF;
+            opacity: 1;
+        }
+        .button-wrapper {
+            width: 100%;
+        }
+        .button-label {
+            text-align: center;
+            font-family: Montserrat;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 37px;
+            letter-spacing: 0;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            opacity: 1;
+        }
+        .button {
+            width: 417px;
+            height: 72px;
+            background: #AE52A6 0% 0% no-repeat padding-box;
+            opacity: 1;
+            padding: 18px 48px 17px 72px;
+            border: 0;
+            margin-top: 11px;
+            border-radius: 10px;
+            width: 100%;
+        }
+        .form-footer {
+            width: 100%;
+            height: 112px;
+            margin-top: 24px;
+            margin-bottom: 14px;
+            text-align: center;
+            font: normal normal normal 15px/20px Montserrat;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+        }
+        .list-wrapper {
+            text-align: left;
+            font: normal normal 600 27px/44px Montserrat;
+            letter-spacing: 0px;
+            color: #232C66;
+            opacity: 1;
+            width: 100%;
+            height: 356px;
+        }
+        .list-wrapper ul {
+            margin-top: 44px;
+        }
+        .content-section span {
+            color: #AE52A6;
+        }
+        .content-section-heading {
+            text-align: left;
+            font: normal normal 900 35px/40px Montserrat;
+            letter-spacing: 0px;
+            color: #232C66;
+            text-transform: capitalize;
+            height: 197px;
+        }
+        .content-section p {
+            text-align: left;
+            line-height: 30px;
+            font-weight: normal;
+            font-variant: normal;
+            font-style: normal;
+            font-size: 20px;
+            font-family: Montserrat;
+            color: #232C66;
+            opacity: 1;
+            width: 542px;
+            line-height: 30px;
+            word-spacing: 0;
+            letter-spacing: 0;
+        }
+        .icon {
+            margin-right: 28px;
+        }
+        .video-container {
+            margin:119px 151px 0 161px;
+            width:1128px;
+            height:566px;
+            background: transparent url('main.jpg') 0% 0% no-repeat padding-box;
+            border-radius: 20px;
+            opacity: 1;
+
+        }
+        .video-wrapper {
+        }
+        .play-button {
+            background: transparent url('playbutton.png') 0% 0% no-repeat padding-box;
+            width: 127px;
+            height: 127px;
+            opacity: 1;
+            background-size: 126.88px;
+            margin-left: 661.56px;
+            margin-top: -356.56px;
+        }
+        .social-media-wrapper {
+            height: 617px;
+        }
+        .social-media-container {
+            margin-top: 129px;
+            margin-left: 161px;
+            width: 100%;
+        }
+        .social-media-container > .row {
+            margin: 0;
+            height: 100%;
+        }
+        .social-media-container > .row div {
+            padding: 0;
+        }
+        .social-media-image-wrapper {
+            background: transparent url('Capture.png') 0% 0% no-repeat padding-box;
+            border-radius: 20px;
+            opacity: 1;
+            background-size: 665px;
+            height: 100%;
+        }
+        .social-media-box .row {
+            margin: 0;
+        }
+        .social-media-box {
+            width: 430px;
+        }
+        .about-heading-wrapper {
+            height: 207px;
+        }
+        .about-heading-container {
+            width: 692px;
+            height: 77px;
+            margin:130px 587px 0px 161px;
+        }
+        .about-heading-container h1 {
+            font: normal normal bold 50px/40px Montserrat;
+            letter-spacing: 0px;
+            color: #232C66;
+        }
+        .about-heading-container h1 span {
+            color: #AE52A6;
+        }
+        .about-image-container {
+            width: 1128px;
+            height: 539px;
+            background: transparent url('main.jpg') 0% 0% no-repeat padding-box;
+            border-radius: 20px;
+            opacity: 1;
+            margin: 39px 156px 0 156px;
+        }
+        .about-content-container {
+            width: 1112px;
+            height: 281px;
+            margin-left:163px;
+            margin-top: 59px;
+        }
+        .about-content-container p {
+            text-align: left;
+            font: normal normal normal 25px/32px Montserrat;
+            letter-spacing: 0px;
+            color: #232C66;
+            opacity: 1;
+            margin: 0;
+        }
+        .contact-details-wrapper {
+            height: 409px;
+        }
+        .horizontal-line {
+            width: 100%;
+            text-align: left;
+            margin-left: 163px;
+            margin-right: 156px;
+            margin-top: 40px;
+            height: 1px;
+            border-top: 2px solid #AE52A6;
+        }
+        .footer {
+            height: 124px;
+            width: 1440px;
+            background: #232C66 0% 0% no-repeat padding-box;
+        }
+        .footer-content{
+            width: 607px;
+            height: 74px;
+            text-align: center;
+            font: normal normal normal 20px/24px Montserrat;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+            margin-left: 417px;
+            margin-top: 28px;
+        }
+        .footer-content p {
+            margin-bottom: 6px;
+        }
+        .social-media-heading {
+            text-align: left;
+            font: normal normal bolder 40px/40px Montserrat;
+            letter-spacing: 0px;
+            color: #232C66;
+            opacity: 1;
+            height: 191px;
+        }
+        .social-media-text-1 {
+            text-align: left;
+            font: normal normal normal 25px/32px Montserrat;
+            letter-spacing: 0;
+            color: #232C66;
+            height: 139px;
+            width: 394px;
+        }
+        .social-media-text-2 {
+            text-align: left;
+            font: normal normal bold 25px/32px Montserrat;
+            letter-spacing: 0px;
+            color: #AE52A6;
+            margin-top: 0;
+        }
+        .social-media-image-container {
+            background: transparent url('Capture.png') 0% 0% no-repeat padding-box;
+            border-radius: 20px;
+            opacity: 1;
+            background-size: 665px;
+            height: 478px;
+            margin-left: 55px;
+            padding: 0;
+            width: 640px;
+            margin-right: 151px;
+        }
+        .bottom-logo-wrapper {
+            background: transparent url('img.png') 0% 0% no-repeat padding-box;
+            height: 41px;
+            margin-left: 561px;
+            padding: 0;
+            width: 318px;
+            background-size: 318px;
+            margin-top: -30px;
+        }
+        .contact-details-container {
+            margin-left: 163px;
+            margin-right: 115px;
+            width: 100%;
+        }
+
+        .contact-details-container ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .contact-details-container > div {
+            padding: 0;
+            text-align: center;
+        }
+        .contact-details-container li {
+            text-align: left;
+            font: normal normal normal 20px/32px Montserrat;
+            letter-spacing: 0px;
+            color: #232C66;
+        }
+        .contact-details-container .bold  {
+            font: normal normal 600 20px/32px Montserrat;
+        }
+        .social-icon-wrapper {
+            background: #1877F2 0% 0% no-repeat padding-box;
+            border-radius: 10px;
+            opacity: 1;
+            width: 80px;
+            height: 80px;
+            padding: 20px 26px 20px 22px;
+            margin-right: 7px;
+        }
+        .social-icon-wrapper i {
+            opacity: 1;
+            width: 19px;
+            height: 36px;
+            font-size: 40px;
+            margin: auto;
+            color: white;
+        }
+        .twitter {
+            background-color: #1DA1F2
+        }
+        .link {
+            background-color: #AE52A6;
+            opacity: 0.34;
+        }
+        .social-media-box .social-media-icon-container {
+            margin-top: 20px;
+        }
+        @media screen and (max-width: 992px) {
+            .logo-wrapper {
+                margin: 44px auto;
+            }
+            .menu-wrapper {
+                display: flex;
+                justify-content: space-between;
+            }
+            .menu-item-wrapper {
+                margin: 10px auto;
+            }
+        }
+    </style>
+
+</head>
+<body>
+<div class="container-fluid main">
+    <div class="row header">
+        <div class="col-xs-12 col-md-4 logo-container">
+            <div class="logo-wrapper">
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-8">
+            <div class="row menu-wrapper">
+                <div class="row menu-item-wrapper">
+                    <span class="menu-item">what's your</span>
+                    <span class="menu-item middle-menu-item">find more</span>
+                    <span class="menu-item middle-menu-item">share</span>
+                    <span class="menu-item last-menu-item">about us</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row main-image-container">
+        <div class="shadow">
+
+        </div>
+        <div class="image-wrapper">
+
+        </div>
+        <div class="quote-wrapper">
+            <div class="quote-container">
+                <p class="quote">
+                    Discover how we're making quality education affordable for international families in Singapore.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row content-wrapper">
+        <div class="row content-container">
+            <div class="xs-12 col-md-6 form-wrapper">
+                <form class="form">
+                    <h1 class="form-heading"> Register Your Interest </h1>
+                    <div class="input-container">
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Last Name">
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="radio-button-main-label-container">
+                        <label class="radio-button-main-label">Country</label>
+                    </div>
+                    <div class="radio-button-container">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample">
+                            <label class="custom-control-label" for="defaultInline1">Singapore</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="defaultInline2" name="inlineDefaultRadiosExample">
+                            <label class="custom-control-label" for="defaultInline2">International</label>
+                        </div>
+                    </div>
+                    <div class="input-container-2">
+                        <input type="text" placeholder="Phone">
+                        <input type="text" placeholder="Post Code">
+                    </div>
+                    <button type="button" class="button">
+                        <label class="button-label">REGISTER</label>
+                    </button>
+                    <div class="form-footer">
+                        By filling up this form, I consent to being contacted by The Open Primary to find out
+                        more about their programme offerings, and I agree to The Open Primary’s Terms and
+                        Conditions and Privacy Policy.
+                    </div>
+                </form>
+                <div class="list-wrapper">
+                    <ul class="fa-ul">
+                        <li><i class="fas fa-check icon"></i>Affordable fees</li>
+                        <li><i class="fas fa-check icon"></i>Former MOE teachers</li>
+                        <li><i class="fas fa-check icon"></i>Low teacher-student ratios</li>
+                        <li><i class="fas fa-check icon"></i>Small class sizes</li>
+                        <li><i class="fas fa-check icon"></i>Close-to-home class centres</li>
+                        <li><i class="fas fa-check icon"></i>Opt-in Enichment programme</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="xs-12 col-md-6 content-section">
+                <div class="content-section-heading"> We're Redefining The Primary Education Experience For
+                    <span >International Families In Singapore.</span>
+                </div>
+                <p>
+                    School fees for international students in Singapore are infamously expensive.
+                    Every parent wants to give their child excellent, quality education, but unfortunately,
+                    this is out of reach for many international families living in Singapore.
+                </p>
+                <p>
+                    The limited number of places in national schools in Singapore for international students
+                    effectively takes away the ability for parents to choose a school for their child on a
+                    cost-benefit basis on a fee spectrum.
+                </p>
+                <p> The Open Primary was founded to give parents the power
+                    of choice again.
+                </p><br>
+                <p>
+                    We connect students from P1-P6 with qualified, NIE trained and MOE experienced
+                    teachers and close-to-home class centres, creating small class sizes (approximately 9 students)
+                    for students to learn conductively and effectively. Our teachers will guide students through
+                    the local Singapore primary school curriculum for a full academic year with regular assessments
+                    and reports each term, but without the high stress of external exams (read "PSLE").
+                </p>
+                <br><br><br>
+                <p>
+                    Your child deserves the best, but that doesn't have to come at exorbitant prices.
+                    Find out more about our one-of-a-kind programme today. Sign up now and we'll be in touch within 24 hours!
+                </p>
+                <div class="button-wrapper">
+                    <button type="button" class="button">
+                        <label class="button-label">REGISTER YOUR INTEREST</label>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row video-wrapper">
+        <div class="video-container">
+        </div>
+        <div class="play-button">
+        </div>
+    </div>
+    <div class="row social-media-wrapper">
+        <div class="social-media-container">
+            <div class="row">
+                <div class="col-xs-12 col-md-4">
+                    <div class="social-media-box">
+                        <div class="row social-media-heading">
+                            Know someone who might benefit from The Open Primary's programme?
+                        </div>
+                        <div class="row social-media-text-1">
+                            Do you have any international friends who are looking for a primary school for their children in Singapore?
+                        </div>
+                        <div class="row social-media-text-2">
+                            Share our page with them and help them out!
+                        </div>
+                        <div class="row social-media-icon-container">
+                            <span class="social-icon-wrapper facebook">
+                               <i class="fab fa-facebook-f"></i>
+                            </span>
+                            <span class="social-icon-wrapper twitter">
+                               <i class="fab fa-twitter"></i>
+                            </span>
+                            <span class="social-icon-wrapper link">
+                                <i class="fas fa-link"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-8">
+                    <div class="social-media-image-container">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row about-heading-wrapper">
+        <div class="about-heading-container">
+            <h1>
+                <span>About</span> The Open Primary
+            </h1>
+        </div>
+    </div>
+    <div class="row about-image-wrapper">
+        <div class="about-image-container">
+
+        </div>
+    </div>
+    <div class="row about-content-wrapper">
+        <div class="about-content-container">
+            <p>The Open Primary was founded in 2016 to offer an alternative path to that of national and international schools
+            in Singapore, offering a unique, hybridised blend of affordable education in a private setting for international
+            students to receive the best education Singapore has to offer. <br/> <br/>We believe that all families should have
+            access to high quality education at a cost they consider reasonable for the expected educational outcomes,
+                and that's exactly what we seek to do.</p>
+        </div>
+    </div>
+    <div class="row contact-details-wrapper">
+        <hr class="horizontal-line">
+        <div class="row bottom-logo-wrapper">
+        </div>
+        <div class="row contact-details-container">
+            <div class="col-xs-12 col-md-4">
+                <ul>
+                    <li class="bold">Address: </li>
+                    <li>The Open Primary</li>
+                    <li>#123, lorem Ipsum, SG</li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <ul>
+                    <li class="bold">Opening Hours:</li>
+                    <li> 9am - 4pm</li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <ul>
+                    <li class="bold">Email:</li>
+                    <li>Askus@theopenprimary.sg </li>
+                    <li class="bold">Phone:</li>
+                    <li>+65 8743 8337</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row footer">
+        <div class="footer-content">
+            <p>
+                Copyright © 2021 The Open Primary. All Rights Reserved.
+            </p>
+            <p>
+                Terms and Conditions | Privacy Policy
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
